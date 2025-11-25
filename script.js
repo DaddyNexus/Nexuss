@@ -4,7 +4,7 @@ const SITE_CONFIG = {
     role: 'C# Developer',
     summary: 'I just make unturned plugins in my free time and sometimes make bots',
     heroEyebrow: '',
-    focusAreas: [],
+    focusAreas: ['Crest Unturned Roleplay'],
     about: 'I do C#. The Unturned Code i do is rocketmod. I can do advance uis etc',
     availability: '',
     currentFocus: 'Currently working on a Unturned roleplay server',
