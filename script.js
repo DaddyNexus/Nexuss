@@ -496,7 +496,7 @@ function createSnowflake(container, snowflakes) {
     flake.textContent = snowflakes[Math.floor(Math.random() * snowflakes.length)];
     
     const left = Math.random() * 100;
-    const drift = (Math.random() - 0.5) * 100;
+    const drift = (Math.random() - 0.5) * 80;
     const duration = Math.random() * 5 + 8;
     const delay = Math.random() * 2;
     const size = isHighlighted ? Math.random() * 8 + 20 : Math.random() * 12 + 14;
@@ -507,6 +507,7 @@ function createSnowflake(container, snowflakes) {
     flake.style.animationDelay = delay + 's';
     flake.style.fontSize = size + 'px';
     flake.style.opacity = isHighlighted ? Math.random() * 0.2 + 0.8 : Math.random() * 0.3 + 0.7;
+    flake.style.zIndex = '10000';
     
     container.appendChild(flake);
     
