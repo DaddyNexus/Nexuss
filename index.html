@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub Profile Hub</title>
+    <meta name="description" content="A customizable GitHub Pages template that surfaces your profile, repos, activity, and contact links.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="snow-container" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true">
+        <span class="glow glow-one"></span>
+        <span class="glow glow-two"></span>
+        <span class="glow glow-three"></span>
+    </div>
+    <div class="grid-overlay" aria-hidden="true"></div>
+
+    <nav class="site-nav" aria-label="Primary">
+        <div class="nav-inner">
+            <div class="brand">
+                <span class="accent-dot"></span>
+                <div>
+                    <p class="brand-title" id="nav-name">Your Name</p>
+                    <p class="brand-subtitle" id="nav-role">Builder of developer platforms</p>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#timeline">Activity</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header id="home" class="hero layout-grid">
+            <div class="hero-text">
+                <p class="eyebrow" id="hero-eyebrow">Available for new collaborations</p>
+                <h1 id="hero-name">Your Name</h1>
+                <p class="hero-lead" id="hero-tagline">Shipping thoughtful software, one merge at a time.</p>
+                <p class="hero-subtext" id="hero-subtext">
+                    This space is fully editable. Add a short descriptor about your work, current focus areas, or what you are looking for.
+                    </p>
+                    <div class="hero-actions">
+                    <a class="btn primary" id="github-link" href="https://github.com" target="_blank" rel="noopener">View GitHub</a>
+                    <a class="btn primary" id="server-link" href="#" target="_blank" rel="noopener">Join Server</a>
+                </div>
+                <div class="pill-group" id="focus-areas"></div>
+                        </div>
+            <section class="profile-card" aria-labelledby="profile-heading">
+                <h2 id="profile-heading" class="sr-only">GitHub profile</h2>
+                <div class="profile-header">
+                    <img id="profile-avatar" class="avatar" src="" alt="GitHub avatar">
+                            <div>
+                        <p class="profile-handle" id="profile-login">@username</p>
+                        <p class="profile-name" id="profile-name">Your Name</p>
+                    </div>
+                </div>
+                <p class="profile-bio" id="profile-bio">GitHub bio will appear here once configured.</p>
+                <ul class="profile-meta">
+                    <li id="profile-location">Remote • Anywhere</li>
+                    <li id="profile-company">Independent</li>
+                    <li id="profile-joined">On GitHub since —</li>
+                </ul>
+                <div class="stat-grid">
+                    <div>
+                        <p class="stat-label">Followers</p>
+                        <p class="stat-value" id="github-followers">—</p>
+                    </div>
+                    <div>
+                        <p class="stat-label">Repos</p>
+                        <p class="stat-value" id="github-repos">—</p>
+                    </div>
+                    <div>
+                        <p class="stat-label">Gists</p>
+                        <p class="stat-value" id="github-gists">—</p>
+                    </div>
+                    <div>
+                        <p class="stat-label">Stars</p>
+                        <p class="stat-value" id="github-stars">—</p>
+                    </div>
+            </div>
+        </section>
+        </header>
+
+        <section id="projects" class="panel projects-panel">
+            <div class="panel-heading">
+                <p class="eyebrow">Recent work</p>
+                <h2>Featured GitHub repositories</h2>
+                <p class="panel-subhead">
+                    This section auto-fetches your pinned repos (or the most recently updated ones) via the GitHub REST API.
+                </p>
+            </div>
+            <div class="projects-grid" id="project-grid">
+                <article class="project-card skeleton"></article>
+                <article class="project-card skeleton"></article>
+                <article class="project-card skeleton"></article>
+            </div>
+        </section>
+
+        <section class="panel timeline-panel" id="timeline">
+            <div class="panel-heading">
+                <p class="eyebrow">Activity</p>
+                <h2>Latest GitHub events</h2>
+                <p class="panel-subhead">Pulled from your public activity feed. Great for showing momentum.</p>
+            </div>
+            <div class="timeline" id="activity-list">
+                <p class="muted">Events will load after the GitHub API responds.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="footer-year"></span> <span id="footer-name">Your Name</span>. Built with GitHub Pages.</p>
+    </footer>
+
+    <!-- Music Player -->
+    <div class="music-player" id="music-player">
+        <audio id="background-music" loop>
+            <source src="Airplane Mode (Instrumental).mp3" type="audio/mpeg">
+        </audio>
+        <button class="music-toggle" id="music-toggle" aria-label="Toggle music">
+            <span class="music-icon">🎵</span>
+        </button>
+    </div>
+</body>
+</html>
